@@ -1,14 +1,13 @@
 :root {
     primary-font: "Playfair Display", serif;
     secondary-font: "Lato", serif;
-
 }
 
-h1 {
-    background-color: #F4C430;
-    font: var(primary-font);
-}
+img {
+    width: 100%;
+    max-width: 550px;
+    height: 540px;
+    object-fit: cover;
+    border-radius: 8px;
 
-.fa-brand {
-    font-size: 14px
 }
