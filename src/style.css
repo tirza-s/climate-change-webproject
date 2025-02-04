@@ -1,13 +1,18 @@
 :root {
-    primary-font: "Playfair Display", serif;
-    secondary-font: "Lato", serif;
+    --primary-font: "Playfair Display", serif;
+    --secondary-font: "Lato", serif;
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--primary-font);
 }
 
 img {
-    width: 100%;
-    max-width: 550px;
-    height: 540px;
+    max-width: 750px;
+    height: 850px;
     object-fit: cover;
     border-radius: 8px;
-
 }
+
+h2 {}
