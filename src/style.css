@@ -1,0 +1,14 @@
+:root {
+    primary-font: "Playfair Display", serif;
+    secondary-font: "Lato", serif;
+
+}
+
+h1 {
+    background-color: #F4C430;
+    font: var(primary-font);
+}
+
+.fa-brand {
+    font-size: 14px
+}
