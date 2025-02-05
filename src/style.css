@@ -1,18 +1,76 @@
 :root {
     --primary-font: "Playfair Display", serif;
     --secondary-font: "Lato", serif;
+    --primary-color: rgb(255, 222, 77);
+    --secondary-color: rgb(169, 196, 108);
+    --tertiary-color: rgba(232, 230, 222, 0.108);
+    --text-color: rgba(12, 12, 12, 0.794);
+    --image-color: rgb(252, 252, 252);
+    --custome-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+
 }
 
-h1 {
-    font-size: 2rem;
-    color: var(--primary-font);
+body {
+    background-color: var(--tertiary-color);
+    font-family: var(--secondary-font);
 }
 
-img {
-    max-width: 750px;
-    height: 850px;
+h2 {
+    font-family: var(--primary-font);
+    font-size: 3rem;
+    color: var(--text-color);
+    margin-bottom: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    border-radius: 25px;
+    padding: 10px 15px;
+}
+
+
+
+.custome-paragraph {
+    font-family: var(--secondary-font);
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+a:hover {
+    border: none;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-image {
+    max-width: 100%;
+    width: 350px;
+    height: 125px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 60px;
+    box-shadow: var(--custome-shadow);
 }
 
-h2 {}
+.custome-text {
+    color: var(--image-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+li {
+    list-style: none;
+}
+
+.custom-section {
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    border-radius: 60px;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 42px 5px;
+    box-shadow: var(--custome-shadow);
+}
