@@ -10,6 +10,12 @@
 
 }
 
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
     background-color: var(--tertiary-color);
     font-family: var(--secondary-font);
@@ -24,13 +30,21 @@ h2 {
 
 a {
     text-decoration: none;
+}
+
+.project-button:hover {
+    border: none;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.project-button {
     color: var(--text-color);
     border: 1px solid var(--text-color);
     border-radius: 25px;
     padding: 10px 15px;
 }
-
-
 
 .custome-paragraph {
     font-family: var(--secondary-font);
@@ -38,12 +52,6 @@ a {
     text-align: center;
 }
 
-a:hover {
-    border: none;
-    background-color: var(--secondary-color);
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
 
 .custom-image {
     max-width: 100%;
@@ -73,4 +81,49 @@ li {
     font-weight: bold;
     padding: 42px 5px;
     box-shadow: var(--custome-shadow);
+}
+
+
+.custom-title {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    margin-top: 25px;
+}
+
+.custome-subject {
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+.custome-subject:hover {
+    cursor: pointer;
+    color: var(--secondary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.custome-date {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.custome-tag {
+    border: 1px solid var(--secondary-color);
+    border-radius: 30px;
+    font-size: 0.80rem;
+    margin: 0 2px;
+    padding: 5px 8px;
+}
+
+.custome-tag:hover {
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.custome-line {
+    justify-content: center;
+    height: 1px;
+    background-color: var(--text-color);
+    width: 100%;
+    margin: 0px 10px 15px 15px;
 }
