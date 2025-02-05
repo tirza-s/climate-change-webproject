@@ -12,6 +12,7 @@
 
 html,
 body {
+    scroll-behavior: smooth;
     height: 100%;
     margin: 0;
 }
@@ -26,6 +27,12 @@ h2 {
     font-size: 3rem;
     color: var(--text-color);
     margin-bottom: 16px;
+}
+
+@media (max-width:991px) {
+    .main-section {
+        font-size: 1.8rem;
+    }
 }
 
 a {
@@ -52,7 +59,6 @@ a {
     text-align: center;
 }
 
-
 .custom-image {
     max-width: 100%;
     width: 350px;
@@ -76,13 +82,25 @@ li {
     border: 1px solid var(--primary-color);
     background-color: var(--primary-color);
     border-radius: 60px;
+    box-shadow: var(--custome-shadow);
     color: var(--text-color);
     font-size: 1.5rem;
     font-weight: bold;
     padding: 42px 5px;
-    box-shadow: var(--custome-shadow);
+    position: relative;
+    overflow: hidden;
 }
 
+@media (max-width:926px) {
+    .custom-section {
+        border-radius: 50px;
+    }
+}
+
+.planet {
+    border: 1px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+}
 
 .custom-title {
     color: var(--text-color);
@@ -93,6 +111,12 @@ li {
 .custome-subject {
     font-size: 1.4rem;
     color: var(--text-color);
+}
+
+@media (max-width:991px) {
+    .custome-subject {
+        font-size: 1rem;
+    }
 }
 
 .custome-subject:hover {
@@ -114,6 +138,14 @@ li {
     padding: 5px 8px;
 }
 
+@media (max-width:991px) {
+    .custome-tag {
+        font-size: 0.8rem;
+        display: block;
+        margin-bottom: 5px;
+    }
+}
+
 .custome-tag:hover {
     cursor: pointer;
     background-color: var(--secondary-color);
@@ -126,4 +158,18 @@ li {
     background-color: var(--text-color);
     width: 100%;
     margin: 0px 10px 15px 15px;
+}
+
+.fa-solid {
+    font-size: 0.85rem;
+    margin-left: 10px;
+    vertical-align: middle;
+    position: relative;
+    top: -3px;
+}
+
+@media (max-width:991px) {
+    .fa-solid {
+        display: none;
+    }
 }
