@@ -29,6 +29,10 @@ h2 {
     margin-bottom: 16px;
 }
 
+h4 {
+    font-size: 1.4rem;
+}
+
 @media (max-width:991px) {
     .main-section {
         font-size: 1.8rem;
@@ -108,6 +112,12 @@ li {
     margin-top: 25px;
 }
 
+.custom-title:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    transition: all 0.3s ease-in-out;
+}
+
 .custome-subject {
     font-size: 1.4rem;
     color: var(--text-color);
@@ -130,12 +140,13 @@ li {
     color: var(--text-color);
 }
 
-.custome-tag {
+.custome-tag,
+.small {
     border: 1px solid var(--secondary-color);
     border-radius: 30px;
     font-size: 0.80rem;
     margin: 0 2px;
-    padding: 5px 8px;
+    padding: 5px 10px;
 }
 
 @media (max-width:991px) {
@@ -146,6 +157,8 @@ li {
     }
 }
 
+
+.small:hover,
 .custome-tag:hover {
     cursor: pointer;
     background-color: var(--secondary-color);
@@ -172,4 +185,11 @@ li {
     .fa-solid {
         display: none;
     }
+}
+
+.form-control,
+button {
+    padding: 10px 30px;
+    margin: 0;
+    border-radius: 28px;
 }
