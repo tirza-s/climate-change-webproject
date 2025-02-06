@@ -364,3 +364,25 @@ li {
     cursor: pointer;
     transition: 0.3s;
 }
+
+footer {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 75px;
+}
+
+.footer-name {
+    color: var(--text-color);
+    font-weight: bold
+}
+
+.footer-name:hover {
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer-link {
+    color: var(--text-color);
+    cursor: pointer;
+}
