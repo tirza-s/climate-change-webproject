@@ -7,19 +7,23 @@
     --text-color: rgba(12, 12, 12, 0.794);
     --image-color: rgb(252, 252, 252);
     --custome-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
-
+    --line-color: rgba(111, 107, 107, 0.196);
 }
 
 html,
 body {
     scroll-behavior: smooth;
     height: 100%;
-    margin: 0;
 }
 
 body {
     background-color: var(--tertiary-color);
-    font-family: var(--secondary-font);
+    font-family: var(--secondary-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
 }
 
 h2 {
@@ -29,13 +33,23 @@ h2 {
     margin-bottom: 16px;
 }
 
+h3 {
+    color: var(--text-color);
+    font-size: 1.3rem;
+}
+
 h4 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    color: var(--text-color);
 }
 
 @media (max-width:991px) {
     .main-section {
         font-size: 1.8rem;
+    }
+
+    h4 {
+        font-size: 1rem;
     }
 }
 
@@ -106,6 +120,26 @@ li {
     background-color: var(--secondary-color);
 }
 
+.article {
+    padding-left: 32px;
+}
+
+.article-container {
+    margin-top: 85px;
+}
+
+@media (max-width:926px) {
+    .article-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .article {
+        padding: 0px
+    }
+
+}
+
 .custom-title {
     color: var(--text-color);
     font-size: 0.9rem;
@@ -145,7 +179,7 @@ li {
     border: 1px solid var(--secondary-color);
     border-radius: 30px;
     font-size: 0.80rem;
-    margin: 0 2px;
+    margin: 5px 2px;
     padding: 5px 10px;
 }
 
@@ -157,7 +191,6 @@ li {
     }
 }
 
-
 .small:hover,
 .custome-tag:hover {
     cursor: pointer;
@@ -168,17 +201,17 @@ li {
 .custome-line {
     justify-content: center;
     height: 1px;
-    background-color: var(--text-color);
+    background-color: var(--line-color);
     width: 100%;
     margin: 0px 10px 15px 15px;
 }
 
 .fa-solid {
     font-size: 0.85rem;
-    margin-left: 10px;
+    margin-left: 8px;
     vertical-align: middle;
     position: relative;
-    top: -3px;
+    top: -1px;
 }
 
 @media (max-width:991px) {
@@ -187,9 +220,147 @@ li {
     }
 }
 
-.form-control,
-button {
-    padding: 10px 30px;
-    margin: 0;
-    border-radius: 28px;
+.article-image {
+    max-width: 100%;
+    width: 350px;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.overlay {
+    color: var(--image-color);
+    display: flex;
+    flex-direction: column;
+    /* Ensures text and link stack */
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    max-width: 100%;
+    margin-left: 10px;
+    width: 95%;
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    justify-content: center;
+}
+
+.additional-text {
+    color: var(--image-color);
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+}
+
+.text-link {
+    font-size: 1rem;
+    color: var(--image-color);
+}
+
+.text-link:hover {
+    text-decoration: underline;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Responsive image on small screen */
+
+@media(max-width:768px) {
+    .article-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article-col {
+        width: 100%;
+    }
+
+    .overlay {
+        position: absolute;
+        margin-left: 15px;
+        padding: 10px;
+        width: 92%;
+    }
+
+    .additional-text {
+        font-size: 1rem;
+    }
+}
+
+.subscribe {
+    max-width: 700px;
+    margin: auto;
+}
+
+.subscribe span.small {
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 15px 20px;
+}
+
+.subscribe h4 {
+    margin-top: 45px;
+}
+
+/* Input & Button Container */
+.input-group {
+    display: flex;
+    align-items: center;
+    background: var(--tertiary-color);
+    border-radius: 30px;
+    overflow: hidden;
+    border: 1px solid var(--secondary-color);
+    margin-top: 10px;
+    margin-right: 3px;
+}
+
+.article-row {
+    margin-bottom: 20px;
+}
+
+@media (max-width:768) {
+    .input-group {
+        flex-direction: column;
+    }
+
+    .article-row {
+        margin-bottom: 20px;
+    }
+
+    h4 .subscribe-text {
+        font-size: 0.8rem;
+    }
+
+    .image-container last {
+        margin-bottom: 25px
+    }
+}
+
+/* Email Input */
+.form-control {
+    flex: 1;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 30px;
+
+}
+
+/* Submit Button */
+.btn {
+    padding: 12px 20px;
+    border: none;
+    background: var(--secondary-color);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
 }
