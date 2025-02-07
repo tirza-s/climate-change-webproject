@@ -10,14 +10,6 @@
     --line-color: rgba(111, 107, 107, 0.196);
 }
 
-/*
-html,
-body {
-    scroll-behavior: smooth;
-    height: 100%;
-}
-    */
-
 body {
     background-color: var(--tertiary-color);
     font-family: var(--secondary-color);
@@ -200,13 +192,20 @@ li {
     transition: all 0.3s ease-in-out;
 }
 
-.custome-line {
+.custome-line,
+.custome-line-footer {
     justify-content: center;
     height: 1px;
     background-color: var(--line-color);
     width: 100%;
     margin: 0px 10px 15px 15px;
 }
+
+.custome-line-footer {
+    margin-top: 80px;
+}
+
+
 
 .fa-solid {
     font-size: 0.85rem;
@@ -311,6 +310,10 @@ li {
 }
 
 /* Input & Button Container */
+input {
+    border: none;
+}
+
 .input-group {
     display: flex;
     align-items: center;
@@ -318,7 +321,7 @@ li {
     border-radius: 30px;
     overflow: hidden;
     border: 1px solid var(--secondary-color);
-    margin-top: 10px;
+    margin-top: 16px;
     margin-right: 3px;
 }
 
@@ -352,7 +355,6 @@ li {
     outline: none;
     font-size: 1rem;
     border-radius: 30px;
-
 }
 
 /* Submit Button */
@@ -360,17 +362,11 @@ li {
     padding: 12px 20px;
     border: none;
     background: var(--secondary-color);
-    color: white;
+    color: var(--image-color);
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
-}
-
-footer {
-    text-align: center;
-    padding-bottom: 20px;
-    padding-top: 75px;
 }
 
 .footer-name {
@@ -384,7 +380,35 @@ footer {
     transition: 0.3s;
 }
 
+.footer-paragraph {
+    padding-left: 16px;
+}
+
 .footer-link {
     color: var(--text-color);
     cursor: pointer;
+}
+
+.footer-year {
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.fa-brands {
+    font-size: 1.5rem;
+}
+
+@media (max-width:768px) {
+
+    .text-start,
+    .text-center {
+        width: 100%;
+        /*stack columns on smaller screen */
+        text-align: center !important;
+    }
+
+    .social-media {
+        width: 100%;
+        align-items: center !important;
+    }
 }
