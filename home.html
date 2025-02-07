@@ -2,9 +2,26 @@
 <html lang="en">
 
 <head>
-    <title>Climate Change</title>
+    <title>Climate Change - Understanding Its Impact & Solutions</title>
+
+    <!--SEO Meta tags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Discover the causes, impacts, and solutions to climate change. Take action for a sustainable future.">
+    <meta name="keywords"
+        content="climate change, global warming, sustainability, environmental impact, climate crisis, climate resilience , environmental solutions">
+
+    <!--Open Graph (OG) for social media-->
+    <meta property="og:title" content="Climate Change - Causes, Effects & Solutions">
+    <meta property="og:url" content="https://climate-change-webproject.netlify.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://climate-change-webproject.netlify.app/">
 
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +37,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <!--CSS Style -->
+    <!--Custom CSS -->
     <link rel="stylesheet" href="./src/style.css">
 
 </head>
@@ -28,6 +45,22 @@
 <body>
 
     <div class="container">
+
+        <!--Navbar-->
+        <ul class="nav justify-content-center pt-4">
+            <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#project">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contribution">Contributions</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact us</a>
+            </li>
+        </ul>
 
         <div class="container p-5">
             <div class="row justify-content-evenly">
@@ -44,12 +77,12 @@
 
         <!--Main-->
         <div>
-            <h2 class="main-section text-center">Let us work together to create a
+            <h2 id="home" class="main-section text-center">Let us work together to create a
             </h2>
             <h2 class="main-section text-center">cleaner & sustainable future for our planet. </h2>
         </div>
 
-        <!--Section-->
+        <!--first Section-->
         <div class="col-sm-12 col-md-12 text-center">
             <p class="custome-paragraph">We are taking action on climate change by working together with partners and
                 communities.
@@ -64,7 +97,7 @@
             <a href="#project" class="project-button">View Projects</a>
         </div>
 
-        <!--Section-->
+        <!--Second Section-->
         <div class="container text-center mt-5">
             <div class="row justify-content-evenly pt-5 mb-5">
                 <div class="col-4 col-md-2">
@@ -87,14 +120,14 @@
             </div>
         </div>
 
-        <!--Article-->
+        <!--first article-->
         <div class="d-flex justify-content-between flex-wrap article-container">
             <h3 class="article">Driving Climate Action - Our 2025 Initiative</h3>
             <p class="">Explore the projects we’re implementing to safeguard nature.</p>
         </div>
 
 
-        <div class="container text-center">
+        <div id="project" class="container text-center">
             <div class="row justify-content-start mb-3">
                 <div class="col-4 col-md-4">
                     <p class="custom-title">Subject</p>
@@ -109,7 +142,7 @@
 
             <div class="custome-line mb-4"></div>
 
-            <div id="project" class="row mb-3">
+            <div class="row mb-3">
                 <div class="col-4 col-md-4">
                     <a href="https://news.stanford.edu/stories/2024/09/how-water-systems-can-accelerate-renewable-energy-adoption?utm_source=chatgpt.com"
                         target="_blank" class="custome-subject">
@@ -178,11 +211,10 @@
                 </div>
             </div>
 
-
             <div class="col">
                 <div class="row align-items-center article-row">
                     <div class="col-4 col-md-4 mt-5 article-col">
-                        <div class="image-container">
+                        <div id="contribution" class="image-container">
                             <img src="./images/forest.png" class="img-fluid article-image" alt="picture of a forest">
                             <div class="overlay">
                                 <p class="additional-text">Forest Clearance</p>
@@ -229,14 +261,14 @@
 
             <!--Footer-->
 
-            <div class="col ">
+            <div class="col">
                 <div class="row d-flex justify-content-between align-items-center pt-5">
 
                     <div class="col-12 col-md-4 text-start subscribe ">
                         <span class="small">newsletter</span>
                     </div>
 
-                    <div class="col-12 col-md-8 text-start ms-auto subscribe">
+                    <div id="contact" class="col-12 col-md-8 text-start ms-auto subscribe">
                         <h4>Subscribe to our newsletter to get the lates update on missions
                             projects & initiaves.</h4>
                         <div class="col-12 col-md-8">
@@ -256,7 +288,6 @@
             </div>
         </div>
 
-
         <div class="custome-line-footer"></div>
 
         <div class="col">
@@ -270,12 +301,13 @@
                 </div>
 
                 <div class="col-4 text-center">
-                    Designed with inspiration from
-                    <a href="https://dribbble.com/" target="_blank" class="footer-link">Dribbble.</a>
-                    <br>
+                    <p class="mb-0">Designed with inspiration from
+                        <a href="https://dribbble.com/" target="_blank" class="footer-link">Dribbble.</a>
+                        <br>
 
-                    <a href="https://unsplash.com/" target="_blank" class="footer-link">Images courtesy of
-                        Unsplash.</a>
+                        <a href="https://unsplash.com/" target="_blank" class="footer-link">Images courtesy of
+                            Unsplash.</a>
+                    </p>
                 </div>
 
                 <div class="col-4 social-media d-flex flex-column align-items-end mt-4">
@@ -292,7 +324,6 @@
             </div>
         </div>
     </div>
-
 
 </body>
 

@@ -51,6 +51,24 @@ a {
     text-decoration: none;
 }
 
+.nav-link {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-family: var(--secondary-font);
+}
+
+@media (max-width:926px) {
+    .nav-link {
+        font-size: 1rem
+    }
+}
+
+.nav-link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--secondary-color);
+}
+
 .project-button:hover {
     border: none;
     background-color: var(--secondary-color);
@@ -396,6 +414,7 @@ input {
 
 .fa-brands {
     font-size: 1.5rem;
+    cursor: pointer;
 }
 
 @media (max-width:768px) {
